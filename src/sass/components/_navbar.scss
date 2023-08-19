@@ -1,0 +1,111 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  //   align-items: center;
+  gap: 2rem;
+  padding-top: 1.8rem;
+  position: relative;
+  z-index: 15;
+
+  &__logo {
+    height: 4.3rem;
+    width: auto;
+
+    img {
+      @include img-size;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: -1.8rem;
+    transition: all 0.5s cubic-bezier(0.74, 0.1, 0.31, 0.98);
+
+    // sidebar
+    @media only screen and (max-width: $tab-port) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      background-image: linear-gradient(
+        to bottom right,
+        $color-primary,
+        $color-secondary
+      );
+      height: 100vh;
+      z-index: 15;
+      flex-direction: column;
+      margin-top: 0;
+      padding-top: 8rem;
+      padding-left: 4rem;
+      align-items: flex-start;
+      transform: translateX(100%);
+
+      a {
+        font-size: 3rem;
+        color: $color-white;
+        border-bottom: 2px solid transparent;
+        transition: all 0.5s;
+
+        &:hover {
+          border-bottom: 2px solid $color-white;
+        }
+      }
+
+      .btn--close {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        background-color: transparent;
+        font-size: 2.6rem;
+        border: none;
+        outline: none;
+        color: $color-white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #acaeaf;
+    transition: all 0.5s;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid #acaeaf;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    .btn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: $color-white;
+
+      i {
+        font-size: 2.4rem;
+      }
+    }
+
+    .btn--profile {
+      color: $color-primary;
+    }
+  }
+}
+
+.show-sidebar {
+  .nav__list {
+    transform: translateX(0);
+  }
+}

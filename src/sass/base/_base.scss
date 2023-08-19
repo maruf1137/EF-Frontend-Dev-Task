@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $laptop-land) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: $tab-land) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 16px;
+  // line-height: 3em;
+  color: $color-white;
+  letter-spacing: 0.2px;
+  overflow-x: hidden;
+  background-color: $color-bg;
+}
+
+.main {
+  height: 100%;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $laptop-land) {
+    padding: 0 3rem;
+  }
+  @media only screen and (max-width: $mbl-land) {
+    padding: 0 1.5rem;
+  }
+}
+
+.section {
+  padding: 2rem 0 !important;
+}

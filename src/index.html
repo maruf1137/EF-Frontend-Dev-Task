@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EF Frontend Dev Task</title>
+    <!-- quantico font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <!-- css links -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- header start -->
+      <header class="header">
+        <div class="container">
+          <!-- navbar start -->
+          <nav class="nav">
+            <a href="index.html" class="nav__logo">
+              <img src="img/logo.webp" alt="" />
+            </a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Trending</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">pre-orders</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Upcoming</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Support 24/7</a>
+              </li>
+              <button class="btn btn-icon btn--close tab-port-show">
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </ul>
+
+            <div class="nav__btns">
+              <button class="btn btn-icon btn--cart">
+                <i class="bi bi-cart3"></i>
+              </button>
+              <button class="btn btn-icon btn--profile">
+                <i class="bi bi-person"></i>
+              </button>
+              <button class="btn btn-icon btn--bar tab-port-show">
+                <i class="bi bi-layout-sidebar-inset-reverse"></i>
+              </button>
+            </div>
+          </nav>
+          <!-- navbar end -->
+        </div>
+
+        <div class="container">
+          <!-- hero section start -->
+          <div class="hero">
+            <div class="days-left">In 15 days</div>
+            <h2 class="heading mbl-land-hide">
+              Starfield Digital Premium <br />
+              Edition + Ealry Access
+            </h2>
+            <h2 class="heading mbl-land-show">
+              Starfield Digital Premium <br />
+              Edition + Ealry Access
+            </h2>
+            <div class="price-box">
+              <div class="price-off">-35%</div>
+              <div class="price">74.89&euro;</div>
+            </div>
+          </div>
+          <!-- hero section end -->
+        </div>
+
+        <!-- search bar start -->
+        <div class="searchBar">
+          <div class="searchBar__wrapper">
+            <div class="searchBar__list">
+              <div class="searchBar__item">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#icon-display"></use>
+                </svg>
+                <p class="text">Display</p>
+                <i class="bi bi-chevron-down"></i>
+                <!-- popup content here -->
+              </div>
+              <div class="searchBar__item">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#icon-playstation"></use>
+                </svg>
+                <p class="text">playstation</p>
+                <i class="bi bi-chevron-down"></i>
+                <!-- popup content here -->
+              </div>
+              <div class="searchBar__item">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#icon-xbox"></use>
+                </svg>
+                <p class="text">xbox</p>
+                <i class="bi bi-chevron-down"></i>
+                <!-- popup content here -->
+              </div>
+              <div class="searchBar__item">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#icon-nintendoswitch"></use>
+                </svg>
+                <p class="text">nintendoswitch</p>
+                <i class="bi bi-chevron-down"></i>
+                <!-- popup content here -->
+              </div>
+            </div>
+            <button class="btn btn-search mbl-land-hide">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="form__wrapper">
+            <form action="#" class="form">
+              <input
+                type="text"
+                placeholder="Minecraft, RPG, Multiplayer"
+                class="input"
+                name="search" />
+              <button class="btn btn-submit">Advance Search</button>
+            </form>
+            <button class="btn btn-close btn-close-searchBox mbl-land-hide">
+              <i class="bi bi-x"></i>
+            </button>
+          </div>
+        </div>
+        <!-- search bar end -->
+        <div class="popup-overlay"></div>
+      </header>
+      <!-- header end -->
+
+      <!-- trending item start -->
+      <section class="section trending-section">
+        <div class="container">
+          <div class="trending">
+            <div class="trending__header">
+              <h3 class="heading">Trending</h3>
+              <button class="btn btn-all">View All</button>
+            </div>
+
+            <div class="trending__list">
+              <!-- trending item -->
+              <div class="trending__item">
+                <figure class="trending__img">
+                  <img src="img/trending-img-1.jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <h5 class="headng">Sengku Dynesty</h5>
+                  <div class="price">19.99&euro;</div>
+                  <div class="price-off">-26%</div>
+                </div>
+              </div>
+              <!-- trending item -->
+              <div class="trending__item">
+                <figure class="trending__img">
+                  <img src="img/trending-img-2.jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <h5 class="headng">
+                    <div class="tag">DLC</div>
+                    The Sims 4 Horse Ranch
+                  </h5>
+                  <div class="price">30.99&euro;</div>
+                  <div class="price-off">-23%</div>
+                </div>
+              </div>
+              <!-- trending item -->
+              <div class="trending__item">
+                <figure class="trending__img">
+                  <img src="img/trending-img-3.jpg" alt="" />
+                </figure>
+                <div class="desc">
+                  <h5 class="headng">Remnant 2</h5>
+                  <div class="price">34.89&euro;</div>
+                  <div class="price-off">-30%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- trending item end -->
+    </main>
+
+    <!-- javascript links -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

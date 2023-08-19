@@ -1,0 +1,104 @@
+h1.heading {
+  font-weight: 400;
+  font-size: 5.2rem;
+  color: $color-black;
+
+  @media only screen and (max-width: $tab-land) {
+    font-size: 4.8rem;
+  }
+  @media only screen and (max-width: $mbl-land) {
+    font-size: 4.2rem;
+  }
+}
+h2.heading {
+  font-weight: 400;
+  font-size: 3.8rem;
+  color: $color-white;
+  line-height: 4.6rem;
+
+  @media only screen and (max-width: $tab-land) {
+    font-size: 3.6rem;
+  }
+  @media only screen and (max-width: $mbl-land) {
+    font-size: 3.2rem;
+  }
+}
+
+h3.heading {
+  font-size: 2.6rem;
+  color: $color-black;
+
+  @media only screen and (max-width: $tab-land) {
+    font-size: 2.2rem;
+  }
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: 400;
+
+  @media only screen and (max-width: $tab-land) {
+    font-size: 2rem;
+  }
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 1.6rem;
+  color: $color-black;
+  font-weight: 400;
+
+  @media only screen and (max-width: $mbl-land) {
+    font-size: 1.4rem;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+.center {
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  fill: $color-black;
+}
+
+@mixin pos-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin img-size {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin icon-vector {
+  height: 2rem;
+  width: 2rem;
+}
